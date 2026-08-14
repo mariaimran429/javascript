@@ -14,8 +14,6 @@
 
     <button onclick="add()">+</button>
     <button onclick="subtract()">-</button>
-    <button onclick="multiply()">*</button>
-    <button onclick="divide()">/</button>
 
     <h3 id="result">Result: </h3>
 
@@ -30,18 +28,6 @@
             let a = Number(document.getElementById("num1").value);
             let b = Number(document.getElementById("num2").value);
             document.getElementById("result").innerText = "Result: " + (a - b);
-        }
-
-        function multiply() {
-            let a = Number(document.getElementById("num1").value);
-            let b = Number(document.getElementById("num2").value);
-            document.getElementById("result").innerText = "Result: " + (a * b);
-        }
-
-        function divide() {
-            let a = Number(document.getElementById("num1").value);
-            let b = Number(document.getElementById("num2").value);
-            document.getElementById("result").innerText = "Result: " + (a / b);
         }
     </script>
 

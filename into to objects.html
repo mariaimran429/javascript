@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 250px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h1 {
+            color: #e74c3c;
+        }
+
+        p {
+            font-size: 18px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cards">
+
+        <div class="card">
+            <h1 id="name1"></h1>
+            <p id="english1"></p>
+            <p id="urdu1"></p>
+            <p id="maths1"></p>
+            <p id="total1"></p>
+            <p id="average1"></p>
+        </div>
+
+        <div class="card">
+            <h1 id="name2"></h1>
+            <p id="english2"></p>
+            <p id="urdu2"></p>
+            <p id="maths2"></p>
+            <p id="total2"></p>
+            <p id="average2"></p>
+        </div>
+
+        <div class="card">
+            <h1 id="name3"></h1>
+            <p id="english3"></p>
+            <p id="urdu3"></p>
+            <p id="maths3"></p>
+            <p id="total3"></p>
+            <p id="average3"></p>
+        </div>
+
+    </div>
+
+    <script>
+
+        let student1 = {
+            name: "Ahmad",
+            english: 85,
+            urdu: 90,
+            maths: 88
+        };
+
+        let student2 = {
+            name: "Ali",
+            english: 78,
+            urdu: 82,
+            maths: 95
+        };
+
+        let student3 = {
+            name: "Sara",
+            english: 92,
+            urdu: 88,
+            maths: 90
+        };
+
+
+        let total1 = student1.english + student1.urdu + student1.maths;
+        let average1 = total1 / 3;
+
+        document.getElementById("name1").textContent = student1.name;
+        document.getElementById("english1").textContent = "English: " + student1.english;
+        document.getElementById("urdu1").textContent = "Urdu: " + student1.urdu;
+        document.getElementById("maths1").textContent = "Maths: " + student1.maths;
+        document.getElementById("total1").textContent = "Total: " + total1;
+        document.getElementById("average1").textContent = "Average: " + average1;
+
+
+        let total2 = student2.english + student2.urdu + student2.maths;
+        let average2 = total2 / 3;
+
+        document.getElementById("name2").textContent = student2.name;
+        document.getElementById("english2").textContent = "English: " + student2.english;
+        document.getElementById("urdu2").textContent = "Urdu: " + student2.urdu;
+        document.getElementById("maths2").textContent = "Maths: " + student2.maths;
+        document.getElementById("total2").textContent = "Total: " + total2;
+        document.getElementById("average2").textContent = "Average: " + average2;
+
+
+        let total3 = student3.english + student3.urdu + student3.maths;
+        let average3 = total3 / 3;
+
+        document.getElementById("name3").textContent = student3.name;
+        document.getElementById("english3").textContent = "English: " + student3.english;
+        document.getElementById("urdu3").textContent = "Urdu: " + student3.urdu;
+        document.getElementById("maths3").textContent = "Maths: " + student3.maths;
+        document.getElementById("total3").textContent = "Total: " + total3;
+        document.getElementById("average3").textContent = "Average: " + average3;
+
+    </script>
+
+</body>
+</html>

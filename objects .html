@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INTRO TO OBJECTS</title>
+
+        <style>
+            body{
+            font-family: Arial;
+            background-color: #f2f2f2;
+            }
+
+            .card{
+            width: 400px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            }
+
+            h1 {
+                color:rgb(248, 167, 180);
+            }
+
+            h2 {
+                color:black;
+            }
+
+            p{
+                font-size:20px;
+                padding:10px;
+                border-bottom:1px solid ;
+            }
+
+        </style>
+    </head>
+
+    <BODY>
+        <div class="card">
+            <h1>MY STUDENT CARD</h1>
+            <h2>contact details</h2>
+             <p id="name"></p>
+            <p id="age"></p>
+            <p id="school"></p>
+            <p id="city"></p>
+        </div>
+
+        <script>
+            let student ={
+                'full name':"MARIA IMRAN",
+                 age : 15,
+                 school : "APS sher khan" ,
+                 city : "ISLAMABAD",
+              };
+
+              document.getElementById("name").textContent ="Name: " + student['full name'];
+              document.getElementById("age").textContent ="Age :" + student.age;
+              document.getElementById("school").textContent ="School :" + student.school;
+              document.getElementById("city").textContent ="city :" + student.city;
+
+        </script>
+    </BODY>
+</html>

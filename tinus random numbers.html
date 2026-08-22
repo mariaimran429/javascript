@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tinu's Random Numbers</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .box {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        p {
+            font-size: 18px;
+            color: darkgreen;
+        }
+
+        button {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>🎲 Tinu's Random Numbers</h1>
+
+        <p id="numbers"></p>
+        <p id="random"></p>
+        <p id="date"></p>
+
+        <button onclick="showNumbers()">Generate</button>
+
+    </div>
+
+    <script>
+
+        function showNumbers() {
+
+            // Random set of numbers
+            let numbers = "";
+
+            for (let i = 1; i <= 5; i++) {
+                let num = Math.floor(Math.random() * 100) + 1;
+                numbers = numbers + num + " ";
+            }
+
+            document.getElementById("numbers").innerHTML =
+                "Random Numbers: " + numbers;
+
+
+            // Random number and rounded value
+            let randomNumber = Math.random() * 100;
+
+            document.getElementById("random").innerHTML =
+                "Random Number: " + randomNumber.toFixed(2) +
+                "<br>Rounded Value: " + Math.round(randomNumber);
+
+
+            // Current date
+            let today = new Date();
+
+            document.getElementById("date").innerHTML =
+                "Today's Date: " + today.toDateString();
+        }
+
+    </script>
+
+</body>
+</html>

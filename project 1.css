@@ -1,0 +1,51 @@
+
+body {
+ margin: 0;
+ font-family: "Baloo Tamma 2", sans-serif;
+ background: #fff;
+}
+
+
+.navigation {
+ border-top: 2px solid #f2a900;
+ padding: 12px 40px;
+}
+
+
+.navigation-link {
+ text-decoration: none;
+ font-size: 14px;
+ font-weight: 500;
+ color: #fff !important;
+}
+
+
+.navigation-link:hover {
+ color: #f2a900 !important;
+}
+.navbar-toggler {
+   border-color: blue;
+}
+
+
+body {
+    background: #252525;
+    font-family: "Roboto Tamma 2", cursive;
+}
+/* Main Heading Font */
+.m-heading {
+ font-family: "Roboto Slab", serif;
+}
+/* Main Container height*/
+.main-container {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:
+    url('https://png.pngtree.com/thumb_back/fh260/background/20241019/pngtree-nature-high-resolution-desktop-wallpaper-hd-image_16414250.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+
+}

@@ -52,7 +52,7 @@
 
 
 /* Footer background like the image */
-foter{
+footer{
     background: #2b2b2b;    /* dark grey */
     width: 100%;
 }
@@ -73,11 +73,3 @@ footer .container{
  padding: 22px 0 !important;
 }
 
-
-/* Text styling */
-footer h5{
- margin: 0;
- font-size: 14px;
- font-weight: 500;
- color: #8b8b8b;           /* muted grey */
-}
